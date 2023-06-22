@@ -45,15 +45,16 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
   | 9 | D/C | Data/Command pin, Logic HIGH for Data and Logic LOW for Command   |
   | 11 | DIN | MOSI pin for SPI interfacing |
   | 13 | RST | Reset pin |
-  | 15 | BL | BackLight for Display panel |
+  | 18 | BL | BackLight for Display panel |
   
   _Touch Control Pins:_
   | Pin no. | Symbol | Description | 
   |---|---|---|
-  | 1 | SCL | Serial Clock pin for I2C interfacing |
-  | 3 | SDA  | Serial Data pin for I2C interfacing |
-  | 18 | IRQ | Touch Panel Interrupt pin, Logic LOW when touch detected | |
-  | 20 | TRS | Touch Panel Reset |
+  | 1 | T_CS | Chip Select pin for SPI interfacing |
+  | 3 | T_Din  | Data In (MOSI) pin for SPI interfacing |
+  | 15 | T_Dout | Data Out (MISO) pin for SPI interfacing |
+  | 20 | IRQ | Touch Controller Interrupt pin, Logic LOW when touch detected |
+  | 22 | TRS | Touch Controller Reset |
   
   **Note:** RST & TRS pins connected internally so while interfacing with MCU's GPIO you can use only one instead of both
   
