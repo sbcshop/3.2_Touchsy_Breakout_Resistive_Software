@@ -33,8 +33,48 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
 - (1) 3.2” Resistive Touch Display 
 - (2) Display Breakout Pins
 
+**Breakout Pins Detail**
+  
+  <img src="https://github.com/sbcshop/3.2_Touchsy_Breakout_Resistive_Software/blob/main/images/touchsy_resistive_Breakout_pins.png" width = "621" height="379">
 
-### Interfacing Details
+  _Display Control Pins:_
+  | Pin No. | Symbol | Description |
+  |---|---|---|
+  | 5 | CS | Chip select pin for SPI interfacing |
+  | 7 | CLK  | Clock pin for SPI interfacing |
+  | 9 | D/C | Data/Command pin, Logic HIGH for Data and Logic LOW for Command   |
+  | 11 | DIN | MOSI pin for SPI interfacing |
+  | 13 | RST | Reset pin |
+  | 15 | BL | BackLight for Display panel |
+  
+  _Touch Control Pins:_
+  | Pin no. | Symbol | Description | 
+  |---|---|---|
+  | 1 | SCL | Serial Clock pin for I2C interfacing |
+  | 3 | SDA  | Serial Data pin for I2C interfacing |
+  | 18 | IRQ | Touch Panel Interrupt pin, Logic LOW when touch detected | |
+  | 20 | TRS | Touch Panel Reset |
+  
+  **Note:** RST & TRS pins connected internally so while interfacing with MCU's GPIO you can use only one instead of both
+  
+   _Power Pins:_
+  | Pin no. | Symbol | Description | 
+  |---|---|---|
+  | 17 | GND | Common Supply Ground pin |
+  | 19 | 5V  | 5V Input Supply |
+  | 21 | VCC | High Side Supply for Level Shifter, Not required when using with 3.3V/5V MCU| 
+  | 22 | 3V3 | 3.3V Input Supply |
+  
+  **Note:** Using only one supply 5V or 3.3V at a time is enough to power Display Module
+
+  ## Interfacing 
+  ### Interfacing Breakout with Pico W
+  - Follow below wiring diagram for connection
+    
+    <img src="https://github.com/sbcshop/3.2_Touchsy_Breakout_Resistive_Software/blob/main/images/resistive_display_picow_wiring.jpg">
+    
+  - Now just visit [Pico W with Resistive GitHub](https://github.com/sbcshop/3.2_Touchsy_Pico_W_Resistive_Software), and follow guide to add required library and then running example codes provided there for display and touch operations on Touch Display Module.
+
 
 
 ## Resources
