@@ -31,7 +31,7 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
 <img src="https://github.com/sbcshop/3.2_Touchsy_Breakout_Resistive_Software/blob/main/images/Touchsy%20Breakout%20Resistive.jpg">
 
 - (1) 3.2” Resistive Touch Display 
-- (2) Breakout Pins
+- (2) Display Breakout Pins
 
 
 ### Interfacing Details
