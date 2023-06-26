@@ -88,8 +88,8 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
   | 11 | DIN | D11 |
   | 13 | RST | D6 |
   | 15 | BL | D5  |
-  | 1 | | A5/SCL |
-  | 3 | | A4/SDA |
+  | 1 | |  |
+  | 3 | |  |
   | 18 | IRQ | - |
   | 17 | GND | GND |
   | 19 | 5V  | 5V  |
