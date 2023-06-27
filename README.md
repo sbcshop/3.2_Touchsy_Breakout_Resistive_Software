@@ -51,10 +51,10 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
   | Pin no. | Symbol | Description | 
   |---|---|---|
   | 1 | T_CS | Chip Select pin for SPI interfacing |
-  | 3 | T_Din  | Data In (MOSI) pin for SPI interfacing |
-  | 15 | T_Dout | Data Out (MISO) pin for SPI interfacing |
+  | 15 | T_CK | Clock pin for SPI interfacing|
+  | 3 | T_DI  | Data In (MOSI) pin for SPI interfacing |
+  | 22 | T_DO | Data Out (MISO) pin for SPI interfacing |
   | 20 | IRQ | Touch Controller Interrupt pin, Logic LOW when touch detected |
-  | 22 | TRS | Touch Controller Reset |
   
   **Note:** RST & TRS pins connected internally so while interfacing with MCU's GPIO you can use only one instead of both
   
@@ -85,15 +85,20 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
   | 5 | CS | D10 |
   | 7 | CLK  | D13 |
   | 9 | D/C | D9 |
-  | 11 | DIN | D11 |
+  | 11 | DIN | D11(MOSI) |
   | 13 | RST | D6 |
   | 15 | BL | D5  |
-  | 1 | |  |
-  | 3 | |  |
-  | 18 | IRQ | - |
+  | 1 | T_CS | D8 |
+  | 15 | T_CK | D13 |
+  | 3 | T_DI  | D11(MOSI) |
+  | 15 | T_DO | D12(MISO)|
+  | 20 | IRQ | D2 |
   | 17 | GND | GND |
   | 19 | 5V  | 5V  |
-
+  | 21 | VCC  | 5V  |
+  
+  **Note:** RST & TRS pins connected internally so while interfacing with MCU's GPIO you can use only one instead of both
+  
   Here interfacing with Arduino Uno provided, taking reference you can use Arduino Mega, Nano, or any other arduino family boards.
   
 **Installing Libraries:**
