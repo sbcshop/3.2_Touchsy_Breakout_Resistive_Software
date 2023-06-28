@@ -18,7 +18,7 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
 ### Specifications:
 - 3.2” Display with resolution 240 × 320
 - Operating voltage of pins compatible for both 3.3V and 5V
-- ILI934 Display Driver
+- ILI9341 Display Driver
 - XPT2046 resistive touch controller
 - Appearance: RGB
 - Colors: 65K/262K
