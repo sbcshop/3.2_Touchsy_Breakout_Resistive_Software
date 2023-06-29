@@ -78,6 +78,8 @@ Here are the features and specifications that make 3.2" Touchsy Resistive Breako
 
 ### Interfacing Breakout with Arduino Uno 
 **Circuit Connection:** Follow Below connection
+
+  <img src="https://github.com/sbcshop/3.2_Touchsy_Breakout_Resistive_Software/blob/main/images/resistive_breakout_arduino_wiring.jpg">
   
   *Breakout Pins <-> Arduino Pins*
   | Breakout Pin No. | Breakout Symbol | Arduino Uno Pin|
